@@ -48,8 +48,6 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-
-  #...
   test "should update user" do
     put :update, id: @user.to_param, user: @input_attributes
     assert_redirected_to users_path
