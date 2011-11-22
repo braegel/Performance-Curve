@@ -5,3 +5,9 @@
 require File.expand_path('../config/application', __FILE__)
 
 PerformanceCurve::Application.load_tasks
+
+require 'rubygems'
+# Install:
+#  sudo gem install ci_reporter
+gem 'ci_reporter'
+require 'ci/reporter/rake/test_unit' # use this if you're using Test::Unit
