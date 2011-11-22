@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @fatigue.user_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @fatigue.date %>
+</p>
+
+<p>
+  <b>Fatigue:</b>
+  <%= @fatigue.fatigue %>
+</p>
+
+
+<%= link_to 'Edit', edit_fatigue_path(@fatigue) %> |
+<%= link_to 'Back', fatigues_path %>

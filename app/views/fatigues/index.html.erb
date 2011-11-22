@@ -1,0 +1,27 @@
+<h1>Listing fatigues</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Date</th>
+    <th>Fatigue</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fatigues.each do |fatigue| %>
+  <tr>
+    <td><%= fatigue.user_id %></td>
+    <td><%= fatigue.date %></td>
+    <td><%= fatigue.fatigue %></td>
+    <td><%= link_to 'Show', fatigue %></td>
+    <td><%= link_to 'Edit', edit_fatigue_path(fatigue) %></td>
+    <td><%= link_to 'Destroy', fatigue, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fatigue', new_fatigue_path %>
