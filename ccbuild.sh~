@@ -14,4 +14,4 @@ fi
 rvm use 1.9.2 --create  
 bundle check || bundle install || exit 1  
 bundle exec rake db:migrate
-bundle exec rake # setup to run all required tests by default
+rake # setup to run all required tests by default
