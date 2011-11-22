@@ -5,7 +5,6 @@ class FatigueTest < ActiveSupport::TestCase
     f = Fatigue.new
     assert f.invalid? 
     assert f.errors[:user_id].any?
-    assert f.errors[:date].any?
     assert f.errors[:fatigue].any?
   end
 end

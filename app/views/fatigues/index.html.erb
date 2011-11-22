@@ -3,7 +3,6 @@
 <table>
   <tr>
     <th>User</th>
-    <th>Date</th>
     <th>Fatigue</th>
     <th></th>
     <th></th>
@@ -13,7 +12,6 @@
 <% @fatigues.each do |fatigue| %>
   <tr>
     <td><%= fatigue.user_id %></td>
-    <td><%= fatigue.date %></td>
     <td><%= fatigue.fatigue %></td>
     <td><%= link_to 'Show', fatigue %></td>
     <td><%= link_to 'Edit', edit_fatigue_path(fatigue) %></td>
